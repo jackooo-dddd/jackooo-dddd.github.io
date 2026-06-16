@@ -4,60 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shunqi Wang</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Shunqi Wang</h1>
-    <p>Computer Science Student | AI & Systems Enthusiast</p>
+  <main class="page-container">
+    <section class="hero">
+      <div class="profile-image-wrapper">
+        <img
+          src="images/profile.jpg"
+          alt="Profile photo of Shunqi Wang"
+          class="profile-image"
+        >
+      </div>
 
-    <img src="images/profile.jpg" alt="Profile photo of Shunqi Wang" width="220">
-  </header>
+      <h1>Shunqi Wang</h1>
+      <p class="subtitle">Computer Science Student | AI & Systems Enthusiast</p>
 
-  <hr>
+      <p class="intro">
+        Hello! I am interested in computer science, artificial intelligence,
+        system design, and software development.
+      </p>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      Hello! I am Shunqi Wang. I am interested in computer science, artificial intelligence,
-      system design, and software development.
-    </p>
-  </section>
+      <div class="links">
+        <a href="https://github.com/jackooo-dddd" target="_blank">GitHub</a>
+        <a href="https://forumapp309.vercel.app" target="_blank">Sports Deck</a>
+      </div>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Sports Deck for Premier League</strong> — A full-stack Premier League discussion
-        and social platform with standings, match results, posts, polls, user following, admin tools,
-        Redis caching, and AI-assisted features.
-      </li>
-      <li>
-        <strong>Stack Transformer Research</strong> — Tested Transformer and stack-augmented models
-        on customized formal-language recognition tasks.
-      </li>
-    </ul>
-  </section>
+    <section class="card">
+      <h2>Projects</h2>
 
-  <section>
-    <h2>Education</h2>
-    <p>
-      University of Toronto Mississauga<br>
-      Honours Bachelor of Science in Computer Science
-    </p>
-  </section>
+      <div class="project">
+        <h3>Sports Deck for Premier League</h3>
+        <p>
+          A full-stack Premier League discussion and social platform with standings,
+          match results, posts, polls, user following, admin tools, Redis caching,
+          and AI-assisted features.
+        </p>
+      </div>
 
-  <section>
-    <h2>Links</h2>
-    <ul>
-      <li><a href="https://github.com/jackooo-dddd">GitHub</a></li>
-      <li><a href="https://forumapp309.vercel.app">Sports Deck Website</a></li>
-    </ul>
-  </section>
+      <div class="project">
+        <h3>Stack Transformer Research</h3>
+        <p>
+          Tested Transformer and stack-augmented models on customized formal-language
+          recognition tasks.
+        </p>
+      </div>
+    </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-  </section>
+    <section class="card">
+      <h2>Education</h2>
+      <p>
+        University of Toronto Mississauga<br>
+        Honours Bachelor of Science in Computer Science
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p>Email: your-email@example.com</p>
+    </section>
+  </main>
 </body>
 </html>
