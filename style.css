@@ -7,7 +7,7 @@
 body {
   margin: 0;
   background: #ffffff;
-  color: #10243d;
+  color: #132238;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   line-height: 1.7;
 }
@@ -18,26 +18,29 @@ body {
   padding: 48px 0 64px;
 }
 
+/* Top profile area */
 .hero {
   display: flex;
   align-items: center;
   gap: 28px;
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   padding: 30px;
-  background: #eef7ff;
-  border: 1px solid #cfe6ff;
-  border-left: 6px solid #1b74d8;
-  border-radius: 22px;
+  background:
+    radial-gradient(circle at top left, rgba(50, 130, 220, 0.13), transparent 34%),
+    #f7fbff;
+  border: 1px solid #d9eaff;
+  border-radius: 24px;
+  box-shadow: 0 12px 34px rgba(22, 80, 145, 0.08);
 }
 
 .profile-img {
   width: 118px;
   height: 118px;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 16px;
   border: 4px solid #ffffff;
-  box-shadow: 0 12px 28px rgba(15, 65, 120, 0.18);
+  box-shadow: 0 12px 28px rgba(15, 65, 120, 0.16);
   flex-shrink: 0;
 }
 
@@ -45,8 +48,16 @@ body {
   flex: 1;
 }
 
+.name-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
 h1 {
-  margin: 0 0 12px;
+  margin: 0;
   color: #073b77;
   font-size: 2.35rem;
   line-height: 1.15;
@@ -55,65 +66,83 @@ h1 {
 }
 
 .intro {
-  max-width: 680px;
-  margin: 0 0 16px;
+  max-width: 690px;
+  margin: 0;
   color: #243b55;
   font-size: 1.02rem;
 }
 
+/* LinkedIn / GitHub icons */
 .top-links {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 9px;
 }
 
 .top-links a {
-  width: 38px;
-  height: 38px;
+  width: 31px;
+  height: 31px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
   color: #075db8;
-  border: 1px solid #cfe6ff;
+  background: #ffffff;
+  border: 1px solid #cfe4ff;
   border-radius: 50%;
-  box-shadow: 0 6px 16px rgba(15, 65, 120, 0.12);
-  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+  box-shadow: 0 4px 12px rgba(15, 65, 120, 0.10);
+  transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease;
 }
 
 .top-links a:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
   background: #075db8;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .top-links svg {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
+  display: block;
   fill: currentColor;
 }
 
+/* Content cards */
 .card {
+  position: relative;
   width: 100%;
   margin-bottom: 22px;
   padding: 28px 32px;
-  background: #f7fbff;
-  border: 1px solid #d6eaff;
-  border-left: 6px solid #1b74d8;
-  border-radius: 20px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(246, 251, 255, 0.96));
+  border: 1px solid #d8e9fb;
+  border-radius: 22px;
+  box-shadow: 0 10px 28px rgba(30, 88, 150, 0.06);
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 26px;
+  right: 26px;
+  height: 3px;
+  background: linear-gradient(90deg, #1b74d8, #8cc8ff, transparent);
+  border-radius: 999px;
 }
 
 h2 {
   margin: 0 0 18px;
   color: #073b77;
-  font-size: 1.35rem;
+  font-size: 1.32rem;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
 
 .entry {
   padding: 18px 0;
-  border-top: 1px solid #d6eaff;
+  border-top: 1px solid #dbeafa;
 }
 
 .entry:first-of-type {
@@ -136,13 +165,13 @@ h2 {
 .entry-heading h3 {
   margin: 0;
   color: #102f4e;
-  font-size: 1.08rem;
-  font-weight: 800;
+  font-size: 1.06rem;
+  font-weight: 750;
 }
 
 .entry-heading span {
   color: #617d99;
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   white-space: nowrap;
 }
 
@@ -178,6 +207,7 @@ a:hover {
   margin-right: 14px;
 }
 
+/* Mobile */
 @media (max-width: 700px) {
   .page {
     width: min(100% - 24px, 900px);
@@ -193,6 +223,10 @@ a:hover {
   .profile-img {
     width: 105px;
     height: 105px;
+  }
+
+  .name-row {
+    gap: 10px;
   }
 
   h1 {
