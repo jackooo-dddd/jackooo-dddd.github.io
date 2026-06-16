@@ -1,70 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shunqi Wang</title>
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <main class="page-container">
+  <main class="container">
     <section class="hero">
-      <div class="profile-image-wrapper">
-        <img
-          src="images/profile.jpg"
-          alt="Profile photo of Shunqi Wang"
-          class="profile-image"
-        >
-      </div>
+      <img
+        src="images/profile.jpg"
+        alt="Profile photo of Shunqi Wang"
+        class="profile-img"
+      />
 
-      <h1>Shunqi Wang</h1>
-      <p class="subtitle">Computer Science Student | AI & Systems Enthusiast</p>
+      <div class="hero-text">
+        <h1>Shunqi Wang</h1>
+        <p class="tagline">
+          Computer Science Specialist at the University of Toronto
+        </p>
+        <p class="summary">
+          I am interested in machine learning, systems, web development,
+          and AI-assisted software engineering.
+        </p>
 
-      <p class="intro">
-        Hello! I am interested in computer science, artificial intelligence,
-        system design, and software development.
-      </p>
-
-      <div class="links">
-        <a href="https://github.com/jackooo-dddd" target="_blank">GitHub</a>
-        <a href="https://forumapp309.vercel.app" target="_blank">Sports Deck</a>
+        <div class="top-links">
+          <a href="https://www.linkedin.com/in/shunqi-jack-wang-a7560b263/" target="_blank">
+            LinkedIn
+          </a>
+          <a href="https://github.com/jackooo-dddd" target="_blank">
+            GitHub
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="card">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <h3>Sports Deck for Premier League</h3>
-        <p>
-          A full-stack Premier League discussion and social platform with standings,
-          match results, posts, polls, user following, admin tools, Redis caching,
-          and AI-assisted features.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Stack Transformer Research</h3>
-        <p>
-          Tested Transformer and stack-augmented models on customized formal-language
-          recognition tasks.
-        </p>
-      </div>
-    </section>
-
-    <section class="card">
+    <section class="section">
       <h2>Education</h2>
       <p>
-        University of Toronto Mississauga<br>
-        Honours Bachelor of Science in Computer Science
+        <strong>University of Toronto</strong><br />
+        Honours Bachelor of Science, Computer Science Specialist, Mathematics Minor
+      </p>
+      <p class="muted">
+        GPA: 3.93 / 4.0
       </p>
     </section>
 
-    <section class="card">
-      <h2>Contact</h2>
-      <p>Email: your-email@example.com</p>
+    <section class="section">
+      <h2>Experience</h2>
+
+      <div class="item">
+        <h3>Machine Learning Research Intern</h3>
+        <p class="meta">Zhejiang Zilu Technology Co., Ltd</p>
+        <p>
+          Fine-tuned a Transformer-XL based Seq2Seq model for address completion
+          and integrated retrieval-augmented validation with geographic coordinates.
+        </p>
+      </div>
+
+      <div class="item">
+        <h3>Deep Learning Research</h3>
+        <p class="meta">University of Toronto / Prof. Mai Ha Vu</p>
+        <p>
+          Tested Transformer and stack-augmented models on customized
+          formal-language recognition tasks, focusing on expressivity and
+          the Chomsky Hierarchy.
+        </p>
+      </div>
+
+      <div class="item">
+        <h3>AutoDocs Development</h3>
+        <p class="meta">University of Toronto</p>
+        <p>
+          Worked on an AI-assisted documentation system that converts terminal
+          recordings into structured XML and documentation summaries. Led the
+          Model 0 fine-tuning component for terminal event-boundary detection.
+        </p>
+      </div>
+
+      <div class="item">
+        <h3>Computer Science Teaching Assistant</h3>
+        <p class="meta">University of Toronto</p>
+        <p>
+          Supported CSC369, CSC148, and CSC363 through grading, office hours,
+          labs, and assignment/exam support.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Projects</h2>
+
+      <div class="item">
+        <h3>SportsDeck for Premier League</h3>
+        <p>
+          A full-stack Premier League fan platform with standings, match results,
+          posts, polls, user following, admin tools, Redis caching, and AI-assisted
+          translation, digest generation, and content moderation.
+        </p>
+        <a class="project-link" href="https://forumapp309.vercel.app" target="_blank">
+          View project
+        </a>
+      </div>
+
+      <div class="item">
+        <h3>AutoDocs</h3>
+        <p>
+          An AI-assisted documentation generation system that processes terminal
+          recordings, segments events, and generates structured documentation
+          through a parser and LLM pipeline.
+        </p>
+      </div>
+
+      <div class="item">
+        <h3>Food-Item Classifier</h3>
+        <p>
+          Built a Random Forest classifier using cleaned survey data with 2,000+
+          responses, achieving 85% validation accuracy.
+        </p>
+      </div>
+
+      <div class="item">
+        <h3>Custom File System</h3>
+        <p>
+          Implemented a simplified file system in C with mkdir, file copy,
+          deletion, symbolic links, hard links, and concurrency control with
+          read-write locks and mutexes.
+        </p>
+      </div>
+
+      <div class="item">
+        <h3>System Memory Performance Measurement</h3>
+        <p>
+          Designed experiments to measure memory bandwidth, cache hierarchy,
+          cache write latency, and cache line size, with automated data collection
+          and visualization.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Skills</h2>
+
+      <div class="skills">
+        <span>C++</span>
+        <span>C</span>
+        <span>Java</span>
+        <span>C#</span>
+        <span>Python</span>
+        <span>SQL</span>
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+        <span>React</span>
+        <span>Next.js</span>
+        <span>Prisma</span>
+        <span>Redis</span>
+        <span>Docker</span>
+        <span>Vercel</span>
+        <span>TensorFlow</span>
+        <span>JAX</span>
+        <span>OpenCV</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>Git</span>
+      </div>
     </section>
   </main>
 </body>
