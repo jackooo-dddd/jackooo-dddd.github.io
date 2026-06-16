@@ -1,3 +1,5 @@
+```html
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,27 +11,27 @@
 
 <body>
   <main class="page">
-    <header class="header">
-      <div class="intro">
+    <header class="hero">
+      <div class="hero-text">
         <h1>Shunqi Wang</h1>
 
-        <p>
+        <p class="intro">
           I am an Honours Bachelor of Science student at the
           <strong>University of Toronto</strong>, specializing in
           <strong>Computer Science</strong> with a minor in
           <strong>Mathematics</strong>.
         </p>
 
-        <p>
-          My interests include machine learning, systems, full-stack development,
-          and AI-assisted software engineering.
+        <p class="intro">
+          My interests include machine learning, formal languages, systems,
+          full-stack development, and AI-assisted software engineering.
         </p>
 
-        <p class="links">
+        <p class="top-links">
           <a href="https://www.linkedin.com/in/shunqi-jack-wang-a7560b263/" target="_blank">
             LinkedIn
           </a>
-          /
+          <span>/</span>
           <a href="https://github.com/jackooo-dddd" target="_blank">
             GitHub
           </a>
@@ -43,114 +45,97 @@
       />
     </header>
 
-    <section>
+    <section class="card">
       <h2>Education</h2>
       <p>
         <strong>University of Toronto</strong>, Honours Bachelor of Science
         <br />
         Computer Science Specialist, Mathematics Minor
       </p>
-      <p class="small">
-        GPA: 3.93 / 4.0
-      </p>
+      <p class="muted">GPA: 3.93 / 4.0</p>
     </section>
 
-    <section>
-      <h2>Experience</h2>
+    <section class="card">
+      <h2>Research & Development</h2>
 
       <div class="entry">
-        <div class="entry-title">
-          <strong>Machine Learning Research Intern</strong>
-          <span>Zhejiang Zilu Technology Co., Ltd</span>
-        </div>
-        <p>
-          Engineered an address completion service by fine-tuning a Transformer-XL
-          Seq2Seq model and integrating retrieval-augmented validation with
-          geographic coordinates.
-        </p>
-      </div>
-
-      <div class="entry">
-        <div class="entry-title">
-          <strong>Research on Deep Learning Models</strong>
+        <div class="entry-heading">
+          <h3>Research on Deep Learning Models</h3>
           <span>University of Toronto / Prof. Mai Ha Vu</span>
         </div>
         <p>
           Tested Transformer and stack-augmented models on customized
-          formal-language recognition tasks, with a focus on model expressivity
-          and the Chomsky Hierarchy.
+          formal-language recognition tasks, focusing on model expressivity
+          in the context of the Chomsky Hierarchy.
         </p>
       </div>
 
       <div class="entry">
-        <div class="entry-title">
-          <strong>AutoDocs Development</strong>
+        <div class="entry-heading">
+          <h3>AutoDocs Development</h3>
           <span>University of Toronto</span>
         </div>
         <p>
-          Worked on an AI-assisted documentation system that converts terminal
-          recordings into structured XML, detects event boundaries, and generates
-          documentation summaries through a parser and LLM pipeline.
+          Worked on an AI-assisted documentation system that converts raw
+          Asciinema terminal recordings into structured XML, segments terminal
+          activity into meaningful events, and generates documentation summaries
+          through a parser and LLM pipeline.
         </p>
-      </div>
-
-      <div class="entry">
-        <div class="entry-title">
-          <strong>Computer Science Teaching Assistant</strong>
-          <span>University of Toronto</span>
-        </div>
         <p>
-          Supported CSC369, CSC148, and CSC363 through grading, labs, office
-          hours, and assignment/exam support.
+          Led the Model 0 fine-tuning component for terminal event-boundary
+          detection and refined the output format from line-based predictions
+          to timestamp-based predictions.
+        </p>
+        <p class="project-links">
+          <a href="https://github.com/CSC392-CSC492-Building-AI-ML-systems/AutoDocs-Winter2026/blob/main/README.md" target="_blank">
+            [project]
+          </a>
+          <a href="https://drive.google.com/file/d/1ssCTLpFQCOF0IWctK1j3NYFi1jjNiI9B/view" target="_blank">
+            [demo]
+          </a>
         </p>
       </div>
     </section>
 
-    <section>
+    <section class="card">
+      <h2>Teaching</h2>
+
+      <div class="entry">
+        <div class="entry-heading">
+          <h3>Computer Science Teaching Assistant</h3>
+          <span>University of Toronto</span>
+        </div>
+        <p>
+          Supported CSC369 Operating Systems, CSC148 Introduction to Computer
+          Science, and CSC363 Computational Complexity and Computability through
+          grading, labs, office hours, help center support, and assignment/exam
+          work.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
       <h2>Projects</h2>
 
       <div class="entry">
-        <div class="entry-title">
-          <strong>SportsDeck for Premier League</strong>
+        <div class="entry-heading">
+          <h3>SportsDeck for Premier League</h3>
           <span>Full-Stack Web App</span>
         </div>
         <p>
           Built a Premier League fan platform with standings, match results,
-          posts, polls, user following, admin tools, Redis caching, and
-          AI-assisted features such as translation, daily digest generation,
-          and content moderation.
+          team and user search, user following, posts, discussions, polls,
+          admin tools, Redis caching, and AI-assisted translation, daily digest
+          generation, and content moderation.
         </p>
-        <p>
+        <p class="project-links">
           <a href="https://forumapp309.vercel.app" target="_blank">[website]</a>
         </p>
       </div>
 
       <div class="entry">
-        <div class="entry-title">
-          <strong>AutoDocs</strong>
-          <span>AI-Assisted Documentation System</span>
-        </div>
-        <p>
-          Developed components for converting raw Asciinema terminal recordings
-          into structured XML and documentation summaries. Led the Model 0
-          fine-tuning component for terminal event-boundary detection.
-        </p>
-      </div>
-
-      <div class="entry">
-        <div class="entry-title">
-          <strong>Food-Item Classifier</strong>
-          <span>Python, TensorFlow, scikit-learn</span>
-        </div>
-        <p>
-          Built a Random Forest classifier using cleaned survey data with 2,000+
-          responses and achieved 85% validation accuracy.
-        </p>
-      </div>
-
-      <div class="entry">
-        <div class="entry-title">
-          <strong>Custom File System</strong>
+        <div class="entry-heading">
+          <h3>Custom File System</h3>
           <span>C</span>
         </div>
         <p>
@@ -161,19 +146,19 @@
       </div>
 
       <div class="entry">
-        <div class="entry-title">
-          <strong>System Memory Performance Measurement</strong>
+        <div class="entry-heading">
+          <h3>System Memory Performance Measurement</h3>
           <span>C, Bash, Python</span>
         </div>
         <p>
-          Designed experiments to measure memory bandwidth, cache hierarchy,
-          cache write latency, and cache line size, with automated data
-          collection and visualization.
+          Designed and implemented experiments to measure memory bandwidth,
+          cache hierarchy, cache write latency, and cache line size, with
+          automated data collection and visualization.
         </p>
       </div>
     </section>
 
-    <section>
+    <section class="card">
       <h2>Skills</h2>
 
       <p>
@@ -190,3 +175,5 @@
   </main>
 </body>
 </html>
+```
+
